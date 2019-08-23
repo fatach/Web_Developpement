@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>bootstrap</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/script.js"></script>
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!---BAR DE NAVIGATION----------------------->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background:black;">
+            <div class="container">
+                <div class="navbar-header">
+          <!---Ajout d'un bouton si la taille devien petit dans d'un telephone---->
+                      <button type="button" class="navbar-toggle" data-toggle="collapse"
+                              data-target="#menu">
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Curriculum vitae</a>
+              </div>
+              <div class="collapse navbar-collapse" id="menu" style="margin-left:300px;" >
+                    <ul class="nav navbar-nav">
+                        <li><a href="mCV.html">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">education</a></li>
+                        <li><a href="#recommandation">Recommendation</a></li>
+                    </ul>
+      <!---Insertion d'un login----------->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in">
+                          </span>Login</a></li>
+                    </ul>
+            </div>
+      </div>
+  </nav>
+    <!---Premiere section--------------------------->
+    <section id="about" class="container-fluid">
+      <div class="col-xs-8 col-md-4 profile-picture">
+          <img src="images/me.jpg" alt="abdoul" class="img-circle" />
+      </div>
+      <div class="heading">
+        <h1>Hello, my name is Abdoul-Fatao Ouedraogo</h1>
+        <h3>COMPUTER SCIENTIST</h3>
+        <a href="docs/mCV.pdf" class="button1">Download my CV</a>
+      </div>
+   </section>
+
+   <!---Deuxieme section--------------------------->
+   <section id="skills">
+     <div class="red-devider"></div>
+      <div class="heading">
+       <h3>COMPETENCE</h3>
+     </div>
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6">
+           <div class="progress">
+               <div class="progress-bar bg-primary active progress-bar-striped active"
+               role="progressbar" style="width: 80%">HTML 80%</div>
+           </div>
+           <div class="progress">
+               <div class="progress-bar bg-primary active progress-bar-striped active"
+               role="progressbar" style="width: 80%">CSS 80%</div>
+           </div>
+           <div class="progress">
+               <div class="progress-bar bg-primary active progress-bar-striped active"
+               role="progressbar" style="width: 50%">JAVA SCRIPT 50%</div>
+           </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="progress">
+              <div class="progress-bar bg-primary active progress-bar-striped active"
+              role="progressbar" style="width: 50%">PYHTON 50%</div>
+          </div>
+          <div class="progress">
+              <div class="progress-bar bg-primary active progress-bar-striped active"
+              role="progressbar" style="width: 50%">JAVA%</div>
+          </div>
+          <div class="progress">
+              <div class="progress-bar bg-primary active progress-bar-striped active"
+              role="progressbar" style="width: 50%">BOOTSTRAP 50%</div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <!---Experience -------------->
+   <section id="experience">
+     <div class="container">
+       <div class="red-devider"></div>
+        <div class="heading">
+         <h3>EXPEREIENCE PROFESSIONNEL</h3>
+        </div>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+          <div class="timeline-panel-container">
+            <div class="time-line-panel">
+              <div class="timeline-heading">
+                <h3>ONATEL -SA</h3>
+                <h3>Developpeur web</h3>
+                <p class="text-muted"><small class="glyphicon glyphicon-time"></small>2015-2017</p>
+                </div>
+              <div class="timeline-body">
+                <p>Developpeur </p>
+                <p>Designeur et concepteur de site et jeu mobile</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge"><span class="  glyphicon glyphicon-briefcase"></span></div>
+          <div class="timeline-panel-container-inverted">
+            <div class="time-line-panel">
+              <div class="timeline-heading">
+                <h3>EAI-BOBO</h3>
+                <h3>Developpeur web</h3>
+                <p class="text-muted"><small class="glyphicon glyphicon-time"></small>2015-2017</p>
+                </div>
+              <div class="timeline-body">
+                <p>Developpeur </p>
+                <p>Designeur et concepteur de site et jeu mobile</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge"><span class=" glyphicon glyphicon-briefcase"></span></div>
+          <div class="timeline-panel-container">
+            <div class="time-line-panel">
+              <div class="timeline-heading">
+                <h3>SM-TECHNOLOGIE</h3>
+                <h3>Developpeur web</h3>
+                <p class="text-muted"><small class="glyphicon glyphicon-time"></small>2015-2017</p>
+                </div>
+              <div class="timeline-body">
+                <p>Developpeur </p>
+                <p>Designeur et concepteur de site et jeu mobile</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+</section>
+<!---SECTION education--------------->
+<section id="education">
+  <div class="container">
+    <div class="red-devider"></div>
+     <div class="heading">
+      <h3>EDUCATION</h3>
+     </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="education-block">
+          <h5>2005-2006</h5>
+          <span class="glyphicon glyphicon-education"></span>
+           <h3>Lycee Kourita</h3>
+           <h4>Diplome de BEPC</h4>
+           <dic class="red-devider">
+           <p>Description</p>
+        </div>
+    </div>
+
+       <div class="col-sm-6">
+        <div class="education-block">
+          <h5>2010-2011</h5>
+          <span class="glyphicon glyphicon-education"></span>
+           <h3>Lycee Departemental</h3>
+           <h4>Diplome du baccalaureat</h4>
+           <dic class="red-devider">
+           <p>Description</p>
+        </div>
+    </div>
+
+        <div class="col-sm-6">
+          <div class="education-block">
+            <h5>2016-2017</h5>
+            <span class="glyphicon glyphicon-education"></span>
+             <h3>Universite Aube Nouvelle</h3>
+             <h4>Licence </h4>
+             <dic class="red-devider">
+             <p>Description</p>
+          </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="education-block">
+          <h5>2018-2020</h5>
+          <span class="glyphicon glyphicon-education"></span>
+           <h3>IFI</h3>
+           <h4>Diplome en cour...</h4>
+           <dic class="red-devider">
+           <p>Description</p>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!---RECOMMANDATION---------------------------------------------------->
+<section id="recommandation">
+  <div class="container">
+    <div class="red-devider"></div>
+     <div class="heading">
+      <h3>RECOMMANDATION</h3>
+     </div>
+
+     <div id="moncarousel" class="carousel silde text-center" data-ride="carousel"  >
+
+             <ol class="carousel-indicators">
+                     <li data-target="#moncarousel" data-slide-to="0" class="active"</li>
+                     <li data-target="#moncarousel" data-slide-to="1"</li>
+                     <li data-target="#moncarousel" data-slide-to="2"</li>
+                   <li data-target="#moncarousel" data-slide-to="3"</li>
+             </ol>
+           <div class="carousel-inner" role="listbox">
+                   <div class="item active">
+                        <h2>Lettre de recommandation</h2>
+                        <h4>recommandation 1</h4>
+                     </div>
+
+                 <div class="item">
+                   <h2>Lettre de recommandation</h2>
+                   <h4>recommandation 2</h4>
+                 </div>
+
+                 <div class="item ">
+                   <h2>Lettre de recommandation</h2>
+                   <h4>recommandation 3</h4>
+               </div>
+
+               <div class="item">
+                 <h2>Lettre de recommandation</h2>
+                 <h4>recommandation 3</h4>
+             </div>
+     </div>
+
+           <a href="#moncarousel" class="left carousel-control"
+           role="button" data-slide="prev">
+                 <span class="glyphicon glyphicon-chevron-left"></span>
+           </a>
+           <a href="#moncarousel" class="right carousel-control"
+           role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+           </a>
+
+ </div>
+
+  </div>
+</section>
+<footer class="text-center">
+  <a href="#about"><span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+<h5> Copyright 2019 by Abdoul-Fatao Ouedraogo</h5>
+</footer>
+
+
+
+
+</body>
+
+</html>

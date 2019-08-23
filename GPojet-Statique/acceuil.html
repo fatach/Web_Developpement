@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+         <div class="container site">
+                  <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span> Restaurant Rii Noodo
+                    <span class="glyphicon glyphicon-cutlery"></span>
+                   </h1>
+        <?php
+          require "admin/database.php";
+          echo '<nav>
+
+            <ul class="nav nav-pills">';
+            $db = Database::connect();
+            $statement = $db->query('SELECT * FROM categories');
+            $categories = $statement->fetchAll();
+            foreach ($categories as $key => $category)
+            {
+              if($category['id'] == '1')
+                echo '<li role="presentation" class="active"><a href="#' .$category['id'] .'" data-toggle="tab">' .$category['name'].'</a></li>';
+              else
+                echo '<li role="presentation"><a href="#' .$category['id'] .'" data-toggle="tab">' .$category['name'].'</a></li>';
+            }
+            echo '</ul>
+                </nav>';
+         ?>
+
+
+
+       <div class="tab-content">
+                          <div class="tab-pane active" id="1">
+                                 <div class="row">
+                                        <div class="col-sm-6 col-md-4">
+                                                <div class="thumbnail">
+                                                       <img src="images/b1.jpeg"alt="..."/>
+                                                       <div class="price">8.90</div>
+                                                       <div class="caption">
+                                                            <h4>Menu classic</h4>
+                                                            <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                                            <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                                            Command</a>
+                                                       </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                                <div class="thumbnail">
+                                                       <img src="images/b2.jpeg"alt="...">
+                                                       <div class="price">8.90</div>
+                                                       <div class="caption">
+                                                            <h4>Menu classic</h4>
+                                                            <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                                            <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                                            Command</a>
+                                                       </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                                <div class="thumbnail">
+                                                       <img src="images/b3.png"alt="...">
+                                                       <div class="price">8.90</div>
+                                                       <div class="caption">
+                                                            <h4>Menu classic</h4>
+                                                            <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                                            <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                                            Command</a>
+                                                       </div>
+                                                </div>
+                                        </div>
+                                 </div>
+                          </div>
+<!---ID 2------------------------------------------------------->
+<div class="tab-pane" id="2">
+       <div class="row">
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b1.jpeg"alt="...">
+                             <div class="price" >8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b1.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b1.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b1.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b1.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b1.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+       </div>
+</div>
+
+
+<!---ID 3------------------------------------------>
+
+<div class="tab-pane" id="3">
+       <div class="row">
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b2.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b2.jpeg"alt="...">
+                             <div>8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b2.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b2.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b2.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b2.jpeg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+       </div>
+</div>
+
+<!---ID 4------------------------------------------>
+
+<div class="tab-pane" id="4">
+       <div class="row">
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b3.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b3.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b3.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b3.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b3.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b3.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+       </div>
+</div>
+
+
+<!---ID 5------------------------------------------>
+
+<div class="tab-pane" id="5">
+       <div class="row">
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b4.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b4.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b4.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b4.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b4.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b4.png"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+       </div>
+</div>
+
+
+<!---ID 3------------------------------------------>
+
+<div class="tab-pane" id="6">
+       <div class="row">
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b5.jpg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b5.jpg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b5.jpg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b5.jpg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b5.jpg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                             <img src="images/b5.jpg"alt="...">
+                             <div class="price">8.90</div>
+                             <div class="caption">
+                                  <h4>Menu classic</h4>
+                                  <p>Sandwich:Burgers, salades, Tomates,cornichons +Frites+Boisson</p>
+                                  <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                  Command</a>
+                             </div>
+                      </div>
+              </div>
+       </div>
+</div>
+<!---------------------->
+
+</div>
+<!--END-------------------->
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

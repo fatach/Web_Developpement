@@ -1,0 +1,83 @@
+body{
+  background:black;
+}
+h3{
+
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.chatbox{
+
+  width: 600px;
+  height:600px;
+  background:#ffff;
+  border: 1px solid black;
+  padding: 25px;
+  min-width: 400px;
+  margin: 20px auto;
+  border-radius: 25px;
+}
+
+.chatlog{
+
+  background-color:#ffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  height:500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+.chat_self{
+
+  border: 1px solid;
+  border-radius: 50px;
+  background: #00a0ff;
+  color: white;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  margin-right: 100px;
+}
+.chat_friend{
+
+  border: 1px solid;
+  border-radius: 50px;
+  background: #ece3e3;
+  color:black;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+.user_foto{
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: red;
+
+}
+.message{
+  padding: 15px;
+  width: 70%;
+  margin: 5px 10px 0;
+}
+.messagebox{
+  color: black;
+  width:100px;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: flex-start;
+
+}
+button{
+  background: black;
+  color:white ;
+  font-weight: bold;
+}

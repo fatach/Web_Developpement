@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bootstrap</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+  </head>
+<body>
+  <!---Bar de navigation
+  navbar-default
+  navbar-inverse
+  navbar-fixed-bottom
+  navbar-right
+  ------------------------------------>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+          <!---Ajout d'un bouton si la taille devien petit dans d'un telephone---->
+                      <button type="button" class="navbar-toggle" data-toggle="collapse"
+                              data-target="#leMenu">
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Site name</a>
+              </div>
+              <div class="collapse navbar-collapse" id="leMenu" style="margin-left:300px;" >
+                    <ul class="nav navbar-nav ">
+                        <li class="dropdown"><a href="#">ACCUEIL</a></li>
+                        <li><a href="#">QUI SOMME NOUS</a></li>
+                        <li><a href="#">NOS PROJET</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+<!---Insertion d'un login----------->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in">
+                          </span>Login</a></li>
+
+            </div>
+      </div>
+  </nav>
+<br/><br/><br/><br/>
+
+<!--Animation slide---------------------->
+<div id="moncarousel" class="carousel silde" data-ride="carousel"
+          style="max-width:1300px;height:600px;">
+            <ol class="carousel-indicators">
+                    <li data-target="#moncarousel" data-slide-to="0" class="active"</li>
+                    <li data-target="#moncarousel" data-slide-to="1"</li>
+                    <li data-target="#moncarousel" data-slide-to="2"</li>
+                  <li data-target="#moncarousel" data-slide-to="3"</li>
+            </ol>
+          <div class="carousel-inner" role="listbox">
+
+                  <div class="item active">
+                        <img src="5.jpg">
+                        <div class="carousel-caption">
+                            <h3>Legende image</h3>
+                        </div>
+                  </div>
+
+                <div class="item">
+                      <img src="9.jpg">
+                      <div class="carousel-caption">
+                          <h3>Belle vue</h3>
+                    </div>
+                </div>
+
+                <div class="item ">
+                      <img src="10.jpg">
+                      <div class="carousel-caption">
+                          <h3>Nature</h3>
+                      </div>
+              </div>
+
+              <div class="item">
+                    <img src="12.jpg">
+                    <div class="carousel-caption">
+                          <h3>Verdure</h3>
+                    </div>
+            </div>
+    </div>
+
+          <a href="#moncarousel" class="left carousel-control"
+          role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#moncarousel" class="right carousel-control"
+          role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+</div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!---Les modal---->
+  <div class="container" style="margin-top:50PX;">
+        <a href="#" class="btn btn-warning" data-toggle="modal" data-target="monModal">Open</a>
+              <div class="modal fade" id="monModal">
+                    <div>
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                    <div class="modal-header">
+                                          <button type="button" class="close"
+                                            data-dismiss="modal">x
+                                          </button>
+                                          <h4 class="modal-title">Titre du modal</h4>
+                                    </div>
+
+                                    <div class="modal-body">
+                                          <p>Hello world !!!!</p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                          <button type="button" class="btn btn-default"
+                                          data-dismiss="modal">Close
+                                          </button>
+                                    </div>
+                            </div>
+                      </div>
+                </div>
+          </div>
+     </div>
+  </body>
+</html>
